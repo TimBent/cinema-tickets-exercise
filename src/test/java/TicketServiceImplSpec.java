@@ -52,7 +52,7 @@ public class TicketServiceImplSpec {
         TicketRequest[] oneAdultTicketRequest = new TicketRequest[] {
                 new TicketRequest( TicketRequest.Type.ADULT, 5 ),
                 new TicketRequest( TicketRequest.Type.CHILD, 6),
-                new TicketRequest( TicketRequest.Type.INFANT, 2)};;
+                new TicketRequest( TicketRequest.Type.INFANT, 2)};
 
         ticketService.purchaseTickets(new TicketPurchaseRequest(expectedAccountId, oneAdultTicketRequest));
 
