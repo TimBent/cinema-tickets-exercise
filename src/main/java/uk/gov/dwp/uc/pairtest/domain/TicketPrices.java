@@ -1,23 +1,17 @@
 package uk.gov.dwp.uc.pairtest.domain;
 
-import java.math.BigDecimal;
+public enum TicketPrices {
+    INFANT(0),
+    CHILD(10),
+    ADULT(20);
 
-final public class TicketPrices {
+    private final int price;
 
-        private static final int INFANT_PRICE = 0;
-        private static final int CHILD_PRICE = 10;
-        private static final int ADULT_PRICE = 20;
+    TicketPrices(int price) {
+        this.price = price;
+    }
 
-        public static int getInfantPrice() {
-            return INFANT_PRICE;
-        }
-
-        public static int getChildPrice() {
-            return CHILD_PRICE;
-        }
-
-        public static int getAdultPrice() {
-            return ADULT_PRICE;
-        }
-
+    public int getPrice() {
+        return this.price;
+    }
 }
